@@ -4,6 +4,7 @@
 ## Include
 > * Babel
 > * Autoprefixer
+> * cssnano
 > * DevServer
 > * rimraf
 > * Loaders: CSS, SASS, File, PostCSS

@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
 
 
 
@@ -31,7 +32,7 @@ module.exports = {
                {
                   loader: 'postcss-loader',
                   options: {
-                    plugins: () => [autoprefixer()]
+                    plugins: () => [cssnano(), autoprefixer()]
                   }
                 },
                "sass-loader"
